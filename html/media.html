@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/html/styles.css">
     <title>Media</title>
 </head>
 
@@ -21,28 +22,126 @@
         dolorum, quam ad, numquam porro sint eum alias obcaecati facere nostrum, veritatis quos?</p>
 
 
-<section>
+    <section>
+        <article>
+
+            <h2>media</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi qui illum, ipsum magni reprehenderit quia
+                delectus cupiditate sit. At pariatur expedita maxime, nulla laboriosam possimus nemo eligendi ipsam
+                earum, dolorem nobis eaque! Non soluta vero excepturi deserunt, recusandae autem expedita.</p>
+            <img src="https://picsum.photos/id/234/200" alt="paris image">
+            <img src="https://picsum.photos/id/235/200" alt="mountain image">
+            <img src="https://picsum.photos/id/236/200" alt="sea house image">
+            <img src="https://picsum.photos/id/237/200" alt="black dog image">
+        </article>
+    </section>
+
+    <section>
+        <h2>video</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod quam ab atque omnis nulla qui porro
+            iusto saepe, eveniet repellat fugit quis voluptates iure repellendus odio incidunt eius aut.</p>
+        <video width="320" height="240" controls poster="ruta/a/tu/imagen.jpg"> /*hacemos esto con img y audio tb */
+            <source src="ruta/a/tu/video.webm">
+            <source src="ruta/a/tu/video.ogg">
+            <source src="ruta/a/tu/video.mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <picture>
+            <source srcset="ruta/img/img.avif" media="(max-width: 500px)">
+            <source srcset="ruta/img/img.webp">
+            <source srcset="ruta/img/img.png">
+            <img src="ruta/img/img.jpg" alt="dog image">
+        </picture>
+
+    </section>
+
+    <section></section>
     <article>
 
         <h2>media</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi qui illum, ipsum magni reprehenderit quia delectus cupiditate sit. At pariatur expedita maxime, nulla laboriosam possimus nemo eligendi ipsam earum, dolorem nobis eaque! Non soluta vero excepturi deserunt, recusandae autem expedita.</p>
-        <img src="https://picsum.photos/id/234/200" alt="paris image">
-        <img src="https://picsum.photos/id/235/200" alt="mountain image">
-        <img src="https://picsum.photos/id/236/200" alt="sea house image">
-        <img src="https://picsum.photos/id/237/200" alt="black dog image">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi qui illum, ipsum magni reprehenderit quia
+            delectus cupiditate sit. At pariatur expedita maxime, nulla laboriosam possimus nemo eligendi ipsam earum,
+            dolorem nobis eaque! Non soluta vero excepturi deserunt, recusandae autem expedita.</p>
+        <img loading="lazy" src="https://picsum.photos/id/238/200" alt="paris image">
+        <img loading="lazy" src="https://picsum.photos/id/239/200" alt="mountain image">
+        <img loading="lazy" src="https://picsum.photos/id/244/200" alt="sea house image">
+        <img loading="lazy" src="https://picsum.photos/id/245/200" alt="black dog image">
     </article>
-</section>
+    </section>
+    <section>
+        <h2>location</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3519.0304441348!2d-15.432068225389568!3d28.115102975951224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40959fed61f399%3A0x453058bdb3474bc6!2sC.%20Capit%C3%A1n%20Eliseo%20L%C3%B3pez%20Ordu%C3%B1a%2C%2034%2C%2035014%20Las%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1sen!2ses!4v1729158543054!5m2!1sen!2ses"
+            width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section>
+        <h2>videos youtube</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LN_LKKlE4kw?si=XdD_piJaxDMvhl_m"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <section>
+        <h2>Formulario de Contacto</h2>
+    <form action="/enviar-datos" method="POST">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+        <div>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+        </div>
+        <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+            <input type="date">
+            <input type="range" min="0" max="10" step="2">
+            <input type="color">
+        
+        </div>
+        <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        </div>
+        <div>
+            <label for="suscripcion">
+                <input type="checkbox" id="suscripcion" name="suscripcion">
+                Deseo suscribirme al boletín de noticias
+            </label>
+        </div>
+        <div>
+        <select>
+            <option value="">Elige tu ciudad</option>
+            <optgroup label="espagna">
 
-<section>
-    <h2>video</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod quam ab atque omnis nulla qui porro iusto saepe, eveniet repellat fugit quis voluptates iure repellendus odio incidunt eius aut.</p>
-    <video width="320" height="240" controls poster="ruta/a/tu/imagen.jpg">
-        <source src="ruta/a/tu/video.webm">
-        <source src="ruta/a/tu/video.ogg">
-        <source src="ruta/a/tu/video.mp4">
-        Tu navegador no soporta el elemento de video.
-      </video>
-</section>
+               
+                <option value="madrid">madrid</option>
+                <option value="valencia">valencia</option>
+                <option value="soria">soria</option>
+            </optgroup>
+            <optgroup label="UK">
+
+               
+                <option value="manchester">manchester</option>
+                <option value="londres">londres</option>
+                <option value="liverpool">liverpool</option>
+            </optgroup>
+        </select>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+    </section>
+    <section>
+        
+    </section>
 </body>
 
 
