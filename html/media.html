@@ -29,16 +29,19 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi qui illum, ipsum magni reprehenderit quia
                 delectus cupiditate sit. At pariatur expedita maxime, nulla laboriosam possimus nemo eligendi ipsam
                 earum, dolorem nobis eaque! Non soluta vero excepturi deserunt, recusandae autem expedita.</p>
+            
+                
             <img src="https://picsum.photos/id/234/200" alt="paris image">
             <img src="https://picsum.photos/id/235/200" alt="mountain image">
             <img src="https://picsum.photos/id/236/200" alt="sea house image">
             <img src="https://picsum.photos/id/237/200" alt="black dog image">
         </article>
+        
     </section>
 
     <section>
         <h2>video</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod quam ab atque omnis nulla qui porro
+        <p>Lorem ipsum dolor sit amet, <italic>consectetur</italic> adipisicing elit. Dolorum quod quam ab atque omnis nulla qui porro
             iusto saepe, eveniet repellat fugit quis voluptates iure repellendus odio incidunt eius aut.</p>
         <video width="320" height="240" controls poster="ruta/a/tu/imagen.jpg"> /*hacemos esto con img y audio tb */
             <source src="ruta/a/tu/video.webm">
@@ -59,8 +62,8 @@
     <article>
 
         <h2>media</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi qui illum, ipsum magni reprehenderit quia
-            delectus cupiditate sit. At pariatur expedita maxime, nulla laboriosam possimus nemo eligendi ipsam earum,
+        <p>Lorem ipsum, dolor sit amet <strong>consectetur</strong> adipisicing elit. Sequi qui illum, ipsum magni reprehenderit quia
+            delectus cupiditate sit. At pariatur expedita maxime, nulla <a href="#">laboriosam</a> possimus nemo eligendi ipsam earum,
             dolorem nobis eaque! Non soluta vero excepturi deserunt, recusandae autem expedita.</p>
         <img loading="lazy" src="https://picsum.photos/id/238/200" alt="paris image">
         <img loading="lazy" src="https://picsum.photos/id/239/200" alt="mountain image">
@@ -84,63 +87,63 @@
     </section>
     <section>
         <h2>Formulario de Contacto</h2>
-    <form action="/enviar-datos" method="POST">
-        <div>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        </div>
-        <div>
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
-        </div>
-        <div>
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" required>
-        </div>
-        <div>
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono">
-            <input type="date">
-            <input type="range" min="0" max="10" step="2">
-            <input type="color">
-        
-        </div>
-        <div>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-        </div>
-        <div>
-            <label for="suscripcion">
-                <input type="checkbox" id="suscripcion" name="suscripcion">
-                Deseo suscribirme al boletín de noticias
-            </label>
-        </div>
-        <div>
-        <select>
-            <option value="">Elige tu ciudad</option>
-            <optgroup label="espagna">
+        <form action="/enviar-datos" method="POST">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                <input type="date">
+                <input type="range" min="0" max="10" step="2">
+                <input type="color">
 
-               
-                <option value="madrid">madrid</option>
-                <option value="valencia">valencia</option>
-                <option value="soria">soria</option>
-            </optgroup>
-            <optgroup label="UK">
+            </div>
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            </div>
+            <div>
+                <label for="suscripcion">
+                    <input type="checkbox" id="suscripcion" name="suscripcion">
+                    <strong>Deseo suscribirme al boletín de noticias</strong>
+                </label>
+            </div>
+            <div>
+                <select>
+                    <option value="">Elige tu ciudad</option>
+                    <optgroup label="espagna">
 
-               
-                <option value="manchester">manchester</option>
-                <option value="londres">londres</option>
-                <option value="liverpool">liverpool</option>
-            </optgroup>
-        </select>
-        </div>
-        <div>
-            <button type="submit">Enviar</button>
-        </div>
-    </form>
+
+                        <option value="madrid">madrid</option>
+                        <option value="valencia">valencia</option>
+                        <option value="soria">soria</option>
+                    </optgroup>
+                    <optgroup label="UK">
+
+
+                        <option value="manchester">manchester</option>
+                        <option value="londres">londres</option>
+                        <option value="liverpool">liverpool</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
     </section>
     <section>
-        
+
     </section>
 </body>
 

@@ -23,4 +23,12 @@ function myFunction (a, b) {
 2. [wikipedia](https://www.wikipedia.org/)
 3. [wanderbud](https://www.wanderbud.es/)
 
+## checkboxes
+
+- [ ] unmarked
+- [x] marked
+
+subrayar <u>este texto</u>
+
+o tachar este ~~otroaqui~~
 
