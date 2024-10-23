@@ -1,0 +1,25 @@
+.color-name{
+    color: indianred; 
+
+}
+
+.color-RGB{
+    color: rgb(230, 249, 128)
+}
+
+.color-RGB-transp{
+    color: rgb(230, 249, 128, 0.5)
+}
+
+.color-HEX-transp{
+    color: #55ff2270; 
+}
+
+
+.color-HSL{
+    color: hsl(0, 100%, 50%)
+}
+
+.color-HSL-transp{
+    color: hsl(180 100% 50% / 0.4)
+}

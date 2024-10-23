@@ -1,0 +1,24 @@
+
+@font-face {
+    font-family: indiana;
+    src: url(/assets/fonts/fedora/SF\ Fedora.ttf);
+    font-weight: 400;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: indiana;
+    src: url(/assets/fonts/fedora/SF\ Fedora\ Titles\ Italic.ttf);
+    font-weight: 400;
+    font-style: italic; 
+}
+.serif {
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+* {
+    font-family: indiana, "Playwrite GB S", sans-serif; 
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
