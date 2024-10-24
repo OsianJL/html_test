@@ -42,3 +42,78 @@ ul li {
 ul li.especial {
     background-color: blue;
 }
+
+
+.btn {
+    background-color: green;
+    border-radius: 5px; 
+    font-size: 1.5rem; 
+    border: none; 
+    padding: 5px 10px; 
+}
+
+.btn:hover {
+    background-color: red;
+    cursor: pointer;
+    border: 1px solid black; 
+}
+
+.btn:active {
+    background-color: white;
+}
+
+.btn:focus {
+    background-color: yellow;
+}
+
+.btn:focus-visible {
+    background-color: rgb(205, 27, 208);
+}
+table {
+    border-collapse: collapse
+}
+
+td {
+    border: 1px solid black; 
+    padding: 5px 10px; 
+}
+
+.tabla-1 tr:first-child {
+    background-color: grey;
+}
+
+.tabla-1 tr:nth-child(3) {
+    background-color: green;
+}
+
+ul li:first-child {
+    background-color: blueviolet;
+}
+
+ul > li:first-child {
+    color: red;
+}
+
+.tabla-2 {
+    margin-block: 20px;
+}
+
+.tabla-2 tr:nth-child(4) {
+    background-color: cyan;
+}
+
+.tabla-2 tr:nth-child(odd){
+
+    background-color: lightcoral;
+
+}
+
+.tabla-3 tr:nth-child(3n) {
+    font-weight: bold;
+}
+
+.tabla-3 tr:not(:nth-child(2n)) {
+    text-decoration: underline indigo;
+}
+
+
