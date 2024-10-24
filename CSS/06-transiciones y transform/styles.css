@@ -1,0 +1,50 @@
+.btn {
+    background-color: greenyellow;
+    color: violet; 
+    border: 1px solid violet; 
+    border-radius: 5px; 
+    padding: .3rem .4rem;
+
+
+    transition: background-color 2s ease, color 1s ease-in-out;
+    /* transition: all 1s ease; */
+}
+
+
+.btn:hover {
+    color: black; 
+    background-color: white;
+}
+
+
+.caja {
+    width: 100px;
+    aspect-ratio: 1;
+    background-color: grey;
+    border: 2px solid black; 
+    text-align: center; 
+    align-content: center;
+    font-size: 1.5rem; 
+
+    transition:transform 1s ease-out ,translate 1s ease-out;
+}
+/* 
+div.translate:hover {
+    transform: translate(50px, 50px);
+
+    translate: 50px 50px; 
+} */
+
+input[type="checkbox"]:checked + .translate {
+    translate: 50px 50px; 
+}
+
+input[type="checkbox"]:checked + .rotate {
+    /* transform: rotate(45deg); 
+    transform: perspective(30px) rotateX(75deg); */
+    rotate: 45deg
+}
+
+input[type="checkbox"]:checked + .escalate {
+    transform: scale(120%); 
+}

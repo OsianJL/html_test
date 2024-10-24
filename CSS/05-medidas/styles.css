@@ -9,3 +9,61 @@ background-color: gold;
 
 width: 100px;
 }
+
+.padre-01 {
+    height: 100px;
+}
+
+.hijo-01 {
+    height: 50%;
+    background-color: gold;
+    width: 50%;
+}
+
+
+.padre-02 {
+    height: 20vh;
+    width: 50vw;
+}
+
+.hijo-02 {
+    background-color: gold;
+    height: 50px;
+}
+
+/* html {
+    height: 100%;
+} */
+
+body {
+    background-color: aqua;
+    border: 2px solid black; 
+    min-height: 100%;
+   /* min-height: 100vh; /*esto es muy importanteeeeee */
+}
+
+p.px {
+    font-size: 46px;
+}
+
+p.rem {
+    font-size: 4rem;
+}
+
+
+.caja-imagen {
+    border: 3px solid green;
+    width: 30%; 
+    aspect-ratio: 2/2;
+
+    /* background-image: url(https://picsum.photos/id/239/600/600);
+    background-size: cover; */
+}
+
+.caja-imagen img {
+    display:block; 
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    object-position: left ;
+}
