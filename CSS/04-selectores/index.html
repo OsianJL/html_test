@@ -1,187 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/04-selectores/styles.css" />
+    <title>Selectores</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/CSS/04-selectores/styles.css" />
-  <title>Selectores</title>
-</head>
+  <body>
+    <main class="container">
+      <h1>Selectores</h1>
+      <details open>
+        <summary>
+          <h2 class="inline">Descendientes</h2>
+        </summary>
+        <h3>titulo3</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+          quisquam doloribus saepe impedit eligendi corrupti fugit. Dignissimos
+          nihil expedita dolorum eos necessitatibus modi nostrum aut, in
+          doloribus! Nobis, quo numquam.
+        </p>
 
-<body>
-  <main class="container">
-    <h1>Selectores</h1>
-    <details open>
-      <summary>
-        <h2 class="inline">Descendientes</h2>
-      </summary>
-      <h3>titulo3</h3>
+        <h4>Titulo4</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+          quisquam doloribus saepe impedit eligendi corrupti fugit. Dignissimos
+          nihil expedita dolorum eos necessitatibus modi nostrum aut, in
+          doloribus! Nobis, quo numquam.
+        </p>
+      </details>
+
+      <details open>
+        <summary>
+          <h2 class="inline">Hermanos</h2>
+        </summary>
+        <ul>
+          <li>item 1</li>
+          <li>
+            item 2
+            <ol>
+              <li>subitem 1</li>
+              <li class="especial">subitem 2</li>
+              <li>subitem 3</li>
+            </ol>
+          </li>
+          <li>item 3</li>
+          <li>item 4</li>
+        </ul>
+      </details>
+      <details open>
+        <summary>
+          <h2 class="inline">Pseudoselectores</h2>
+        </summary>
+        <button class="btn">Click</button>
+      </details>
+      <hr />
+
+      <h2>pseudoclases por poscicion</h2>
+
+      <table class="tabla-1">
+        <tbody>
+          <tr>
+            <td>Nombre</td>
+            <td>apellidos</td>
+            <td>edad</td>
+          </tr>
+          <tr>
+            <td>Osián</td>
+            <td>jorge</td>
+            <td>32</td>
+          </tr>
+          <tr>
+            <td>Ana</td>
+            <td>torren</td>
+            <td>45</td>
+          </tr>
+          <tr>
+            <td>Carlos</td>
+            <td>bernal</td>
+            <td>78</td>
+          </tr>
+          <tr>
+            <td>Julios</td>
+            <td>laram</td>
+            <td>22</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <table class="tabla-2">
+        <tbody>
+          <tr>
+            <td>Nombre</td>
+            <td>apellidos</td>
+            <td>edad</td>
+          </tr>
+          <tr>
+            <td>Osián</td>
+            <td>jorge</td>
+            <td>32</td>
+          </tr>
+          <tr>
+            <td>Ana</td>
+            <td>torren</td>
+            <td>45</td>
+          </tr>
+          <tr>
+            <td>Carlos</td>
+            <td>bernal</td>
+            <td>78</td>
+          </tr>
+          <tr>
+            <td>Julios</td>
+            <td>laram</td>
+            <td>22</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <table class="tabla-3">
+        <tbody>
+          <tr>
+            <td>Nombre</td>
+            <td>apellidos</td>
+            <td>edad</td>
+          </tr>
+          <tr>
+            <td>Osián</td>
+            <td>jorge</td>
+            <td>32</td>
+          </tr>
+          <tr>
+            <td>Ana</td>
+            <td>torren</td>
+            <td>45</td>
+          </tr>
+          <tr>
+            <td>Carlos</td>
+            <td>bernal</td>
+            <td>78</td>
+          </tr>
+          <tr>
+            <td>Julios</td>
+            <td>laram</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>Ana</td>
+            <td>torren</td>
+            <td>45</td>
+          </tr>
+          <tr>
+            <td>Carlos</td>
+            <td>bernal</td>
+            <td>78</td>
+          </tr>
+          <tr>
+            <td>Julios</td>
+            <td>laram</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>Ana</td>
+            <td>torren</td>
+            <td>45</td>
+          </tr>
+          <tr>
+            <td>Carlos</td>
+            <td>bernal</td>
+            <td>78</td>
+          </tr>
+          <tr>
+            <td>Julios</td>
+            <td>laram</td>
+            <td>22</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <div class="caja-truquito">
+        <p>soy un mini parrafo</p>
+      </div>
+      <hr />
+      <h2 class="titulo-truquito">tocame y cambia el parrafo de abajo</h2>
+      <p>aqui cambio yo de color nada mas</p>
+      <p>aqui cambio yo de color nada mas</p>
+      <p>aqui cambio yo de color nada mas</p>
+      <hr />
+      <input id="check" type="checkbox" checked />
+      <label for="check">check</label>
+
+      <hr />
+      <!-- <h3 class="dark">:has()</h3> -->
+      <h3>:has()</h3>
+
+      <div class="padre-has">
+        <div class="hijo-has"></div>
+      </div>
+
+      <hr />
+
+      <h2>pseudoelementos::</h2>
+      <h3>::selection</h3>
+      <h3>::marker</h3>
+      <h3>::first-line</h3>
+      <h3>::first-letter</h3>
+      <h3>::before</h3>
+      <h3>::after</h3>
+
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-        quisquam doloribus saepe impedit eligendi corrupti fugit. Dignissimos
-        nihil expedita dolorum eos necessitatibus modi nostrum aut, in
-        doloribus! Nobis, quo numquam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, iure
+        nostrum. Eveniet quaerat quam quod pariatur, cupiditate, sit illo sequi
+        facilis ipsa dolore tenetur ad a expedita quas accusamus dolorum
+        doloribus earum quidem unde. Ea, voluptas, rem aliquam recusandae atque
+        at exercitationem unde molestias sit cupiditate saepe? Voluptatibus,
+        commodi dolor.
       </p>
 
-      <h4>Titulo4</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-        quisquam doloribus saepe impedit eligendi corrupti fugit. Dignissimos
-        nihil expedita dolorum eos necessitatibus modi nostrum aut, in
-        doloribus! Nobis, quo numquam.
-      </p>
-    </details>
+      <hr />
 
-    <details open>
-      <summary>
-        <h2 class="inline">Hermanos</h2>
-      </summary>
-      <ul>
-        <li>item 1</li>
-        <li>
-          item 2
-          <ol>
-            <li>subitem 1</li>
-            <li class="especial">subitem 2</li>
-            <li>subitem 3</li>
-          </ol>
-        </li>
-        <li>item 3</li>
-        <li>item 4</li>
-      </ul>
-    </details>
-    <details open>
-      <summary>
-        <h2 class="inline">Pseudoselectores</h2>
-      </summary>
-      <button class="btn">Click</button>
-    </details>
-    <hr>
+      <h3>before y after</h3>
 
-    <h2>pseudoclases por poscicion</h2>
+      <h4 class="supertitulo">
+        <span class="antes"></span>
+        soy un super titulo
+        <span class="despues"></span>
+      </h4>
 
-    <table class="tabla-1">
-      <tbody>
-        <tr>
-          <td>Nombre</td>
-          <td>apellidos</td>
-          <td>edad</td>
-        </tr>
-        <tr>
-          <td>Osián</td>
-          <td>jorge</td>
-          <td>32</td>
-        </tr>
-        <tr>
-          <td>Ana</td>
-          <td>torren</td>
-          <td>45</td>
-        </tr>
-        <tr>
-          <td>Carlos</td>
-          <td>bernal</td>
-          <td>78</td>
-        </tr>
-        <tr>
-          <td>Julios</td>
-          <td>laram</td>
-          <td>22</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr>
-    <table class="tabla-2">
-      <tbody>
-        <tr>
-          <td>Nombre</td>
-          <td>apellidos</td>
-          <td>edad</td>
-        </tr>
-        <tr>
-          <td>Osián</td>
-          <td>jorge</td>
-          <td>32</td>
-        </tr>
-        <tr>
-          <td>Ana</td>
-          <td>torren</td>
-          <td>45</td>
-        </tr>
-        <tr>
-          <td>Carlos</td>
-          <td>bernal</td>
-          <td>78</td>
-        </tr>
-        <tr>
-          <td>Julios</td>
-          <td>laram</td>
-          <td>22</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr>
-    <table class="tabla-3">
-      <tbody>
-        <tr>
-          <td>Nombre</td>
-          <td>apellidos</td>
-          <td>edad</td>
-        </tr>
-        <tr>
-          <td>Osián</td>
-          <td>jorge</td>
-          <td>32</td>
-        </tr>
-        <tr>
-          <td>Ana</td>
-          <td>torren</td>
-          <td>45</td>
-        </tr>
-        <tr>
-          <td>Carlos</td>
-          <td>bernal</td>
-          <td>78</td>
-        </tr>
-        <tr>
-          <td>Julios</td>
-          <td>laram</td>
-          <td>22</td>
-        </tr>
-        <tr>
-          <td>Ana</td>
-          <td>torren</td>
-          <td>45</td>
-        </tr>
-        <tr>
-          <td>Carlos</td>
-          <td>bernal</td>
-          <td>78</td>
-        </tr>
-        <tr>
-          <td>Julios</td>
-          <td>laram</td>
-          <td>22</td>
-        </tr>
-        <tr>
-          <td>Ana</td>
-          <td>torren</td>
-          <td>45</td>
-        </tr>
-        <tr>
-          <td>Carlos</td>
-          <td>bernal</td>
-          <td>78</td>
-        </tr>
-        <tr>
-          <td>Julios</td>
-          <td>laram</td>
-          <td>22</td>
-        </tr>
-      </tbody>
-    </table>
+      <h4 class="supertitulo-cool">otro supertitulo</h4>
 
-
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>

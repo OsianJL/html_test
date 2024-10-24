@@ -116,4 +116,86 @@ ul > li:first-child {
     text-decoration: underline indigo;
 }
 
+div.caja-truquito {
+    background-color: lightcoral;
+    height: 100px;
+    text-align: center;
+}
+
+div.caja-truquito:hover p {
+    background-color: blue;
+}
+
+.titulo-truquito:hover ~ p {
+    background-color: red;
+}
+
+.titulo-truquito:hover + p {
+    color: blue
+}
+
+input[type="checkbox"]:checked + label{
+    box-shadow: 0 0 5px 3px blue;
+}
+
+input {
+    display:none; 
+}
+
+
+.padre-has {
+    background-color: red;
+    border: 1px solid black; 
+    height: 100px;
+}
+
+.hijo-has {
+    background-color: blue;
+    border: 2px solid white; 
+    height: 20px;
+}
+
+.padre-has:has(.hijo-has:hover) {
+    background-color: green;
+}
+
+body:has(.dark) {
+    background-color: gray;
+}
+
+::selection {
+    background: violet;
+    color: blue
+}
+
+
+
+.supertitulo .antes {
+    display: inline-block; 
+    background-color: green ;
+    height: 3px;
+    width: 15px;
+}
+
+.supertitulo .despues {
+    display: inline-block; 
+    background-color: green ;
+    height: 3px;
+    width: 15px;
+}
+
+.supertitulo-cool::before {
+    content: '';
+    display: inline-block; 
+    background-color: green ;
+    height: 3px;
+    width: 15px;
+}
+.supertitulo-cool::after {
+    content: '';
+    display: inline-block; 
+    background-color: green ;
+    height: 3px;
+    width: 15px;
+}
 
