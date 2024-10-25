@@ -1,0 +1,126 @@
+* {
+  font: 16px Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: min(800px, 90%);
+  margin-inline: auto;
+}
+
+summary h2 {
+  display: inline;
+}
+
+.padre-1 {
+  height: 300px;
+  background-color: hotpink;
+  border: 4px solid black;
+}
+
+.hijo {
+  background-color: gold;
+  border: 2px solid white;
+  padding: 1rem;
+}
+
+/* ========================================================= */
+
+/* relative */
+
+.hijo-relative {
+  position: static; /*por defecto y se anula con relative */
+  position: relative; /* lo cambiamos pero nada ocurre */
+  /* a partir de ahora ya podemos usar las propiedads top, left, right, bottom y z-index*/
+  /* la caja se moverá DESDE DONDE ESTÁ, Y EL RESTO DE CAJAS NO SE MUEVEN*/
+
+  left: 90px;
+  top: 100px;
+  z-index: 4;
+}
+
+.hijo-relative-2 {
+  position: static;
+
+  /* position: relative;  */
+
+  /* left: 30px; 
+    top: 100px; 
+    z-index: 100;  */
+}
+/*las cajas en estado normal static, las de abajo se ponen encima de las de arriba
+pero al ser relative automaticamente van por arriba */
+.hijo-normal-1 {
+  background-color: royalblue;
+  height: 70px;
+  margin-top: -20px;
+
+  /* left: 30px; 
+    top: 100px;  */
+}
+
+/* ========================================================= */
+
+/* absolute */
+
+.padre-2 {
+  height: 300px;
+  background-color: hotpink;
+  border: 4px solid black;
+  position: relative;
+}
+
+.hijo-absolute {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+}
+
+.hijo-absolute-2 {
+  background-color: blueviolet;
+}
+
+.hijo-normal-2 {
+  background-color: royalblue;
+  height: 70px;
+}
+
+.menu {
+  text-align: center;
+  border: 1px solid red;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.menu > a,
+.menu > .submenu {
+  color: white;
+  text-decoration: none;
+  background-color: royalblue;
+  padding: 0.3rem 0.7rem;
+}
+
+.menu > .submenu {
+  display: inline-block;
+  position: relative;
+}
+
+.submenu-caja {
+  top: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  background-color: rgb(63, 171, 153);
+  padding: 1rem;
+  /* display: none; */
+}
+
+.submenu-caja a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.submenu:hover > .submenu-caja {
+  display: block;
+}
