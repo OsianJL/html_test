@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+
+}
+
+.padre {
+    background-color: hotpink;
+    border: 4px solid black; 
+    width: min(90%, 800px);
+    height: 50vh;
+    margin-inline: auto; 
+    display:flex; 
+}
+
+.hijo {
+    background-color: gold;
+    width: 50px;
+    padding: 2rem;
+    margin: .2rem; 
+}
+
+/* flex-grow */
+
+.hijo-2 {
+    background-color: blue;
+    flex-grow:1; 
+}
+
+.hijo-4 {
+    background-color:white;
+    flex-grow: 1;
+}
