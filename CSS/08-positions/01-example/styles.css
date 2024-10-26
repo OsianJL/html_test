@@ -1,0 +1,59 @@
+* {
+box-sizing: border-box;
+}
+
+.caja-imagen {
+    position: relative; 
+    border: 2px solid hotpink; 
+    width: 40%;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.caja-imagen .title {
+    position: absolute; 
+    background-color: red;
+    top: 50%; 
+    left: 50%; 
+    translate: -50% -50%;
+    padding: .6rem;
+    border-radius: 10px;
+
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.caja-imagen:hover > .title {
+    opacity: 1; 
+}
+
+
+/* otra forma */
+
+.caja-imagen2 {
+    position: relative; 
+    border: 2px solid hotpink; 
+    width: 40%;
+    overflow: hidden;
+}
+
+
+.caja-imagen2 .title2 {
+    position: absolute; 
+    background-color: red;
+    top: 150%; 
+    left: 50%; 
+    translate: -50% -50%;
+    padding: .6rem;
+    border-radius: 10px;
+    transition: top 1s ease;
+
+}
+
+.caja-imagen2:hover > .title2 {
+    top: 50%
+}

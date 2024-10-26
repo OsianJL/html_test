@@ -1,4 +1,3 @@
-plate pickle,
-bento pickle {
-  color: red; /* O cualquier estilo que desees aplicar */
+bento:nth-last-child(1) {
+  color: red; 
 }
