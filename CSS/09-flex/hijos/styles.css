@@ -28,5 +28,14 @@
 
 .hijo-4 {
     background-color:white;
-    flex-grow: 1;
+    flex-grow: 2;
 }
+
+.hijo-3 {
+    background-color: red;
+    flex-shrink: 0;
+    width: 100px;
+}
+
+/* flex-shrink es lo contrario de flex-grow */
+
