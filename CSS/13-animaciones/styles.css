@@ -1,0 +1,23 @@
+.caja {
+    background-color: gold;
+
+width: 200px;
+height: 200px;
+animation: moving 1s infinite alternate forwards ease-in-out
+}
+
+
+@keyframes moving {
+    from {
+        translate: 0; 
+        scale: 1; 
+        background-color: rgb(223, 23, 23);
+    }
+
+    to {
+        translate: 111px;
+        scale: 1.2;
+        background-color: gold;
+    }
+    
+}
